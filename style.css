@@ -1,0 +1,37 @@
+/* TrueGram design system: ink on paper, navy for links, label rules instead of cards. */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700;800;900&display=swap");
+
+:root {
+  --navy: #14305c;
+  --ink: #000000;
+  --paper: #ffffff;
+  --graphite: #555555;
+}
+
+html { background: var(--paper); color: var(--ink); }
+body {
+  margin: 0;
+  font-family: "Libre Franklin", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+
+h1 { font-size: 40px; font-weight: 900; letter-spacing: -1px; line-height: 1.1; margin: 8px 0 4px; }
+h1.wordmark { color: var(--navy); }
+h2 { font-size: 22px; font-weight: 900; margin: 36px 0 0; }
+h3 { font-size: 16px; font-weight: 800; margin: 20px 0 4px; }
+p, ul { margin: 8px 0; }
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
+
+.brand { font-weight: 900; margin: 0; }
+.brand a { color: var(--navy); text-decoration: none; }
+.detail { color: var(--graphite); font-size: 14px; margin: 0 0 8px; }
+.lead { font-size: 20px; font-weight: 700; }
+
+a { color: var(--navy); font-weight: 700; }
+
+hr { border: 0; border-top: 1px solid var(--ink); margin: 4px 0 8px; }
+hr.heavy { border-top-width: 12px; margin: 12px 0 16px; }
+h2 + hr { border-top-width: 5px; }
